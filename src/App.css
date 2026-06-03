@@ -1,0 +1,24 @@
+.contenedor-principal{
+  /* centramdos todo el bloque principala y le damos un ancho maximo */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px  20px;
+
+}
+.cabecera-app{
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+.cabecera-app h1{
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+/* la magia de flexbox para las tarjetas */
+.galeria-empleados{
+  display: flex;
+  flex-wrap: wrap;   /*si no caben, bajan a la siguiente linea*/
+  justify-content: center;  /*centadas horizontalmente*/
+  gap: 40px; /*separacion perfecta de tarjetas*/
+}
