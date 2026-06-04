@@ -1,5 +1,5 @@
 import './UserCard.css'
-
+import iconoLinkedIn from '../assets/linkedin.png'
 function UserCard(props) {
   return (
     <div className='tarjeta'>
@@ -8,6 +8,7 @@ function UserCard(props) {
             <h3>{props.nombre}</h3>
             <p className='profesion'>
                 {props.profesion}
+                <img src={iconoLinkedIn} alt="Logo Linkedin" className='icono-red-social'/> 
             </p>
             <button className='btn-conectar'>Conectar</button>
         </div>
